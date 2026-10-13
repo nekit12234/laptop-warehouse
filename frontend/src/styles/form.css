@@ -1,0 +1,26 @@
+.form-card {
+  background: var(--bg-card);
+  border: 2px solid var(--accent-deep);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+.form-card h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--accent-deep);
+  color: #fff;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.form-label { display: block; font-size: 13px; font-weight: bold; color: var(--text-muted); margin-bottom: 4px; }
+.form-label .input { margin-top: 4px; font-weight: normal; color: var(--text); }
+.form-actions { display: flex; gap: 8px; padding-top: 8px; }

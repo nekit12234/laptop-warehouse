@@ -1,0 +1,36 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  color: var(--text);
+  font-size: 14px;
+  border: 2px solid var(--accent-deep);
+}
+
+.table thead { background: var(--accent-deep); }
+
+.table th {
+  text-align: left;
+  padding: 10px 12px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border: 1px solid var(--accent-deep);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  vertical-align: middle;
+  color: var(--text);
+}
+
+.table tbody tr:nth-child(even) { background: #340e6e; }
+.table tbody tr:hover { background: var(--bg-hover); }
+
+.table__num { text-align: center; font-variant-numeric: tabular-nums; }
+.table__num--danger { color: var(--danger); font-weight: bold; }
+.table__actions { display: flex; gap: 4px; flex-wrap: wrap; }

@@ -1,0 +1,72 @@
+.laptops__toolbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.laptops__search {
+  flex: 1;
+  max-width: 400px;
+}
+
+.laptops__history {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+
+.laptops__history-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fde68a;
+  font-size: 14px;
+}
+
+.laptops__history-head b {
+  color: #92400e;
+}
+
+.laptops__history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.laptops__history li {
+  padding: 6px 0;
+  border-bottom: 1px solid #fde68a;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.laptops__history li:last-child {
+  border-bottom: none;
+}
+
+.laptops__history li b {
+  color: #92400e;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 640px) {
+  .laptops__toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .laptops__search {
+    max-width: none;
+  }
+}

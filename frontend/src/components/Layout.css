@@ -1,0 +1,83 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.app-title {
+  font-size: 22px;
+  margin: 0;
+  color: var(--text);
+}
+
+.app-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.app-user__name {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.app-user__role {
+  color: var(--text-muted);
+  font-size: 12px;
+  background: var(--bg-hover);
+  padding: 2px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+}
+
+.app-nav {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.app-nav__link {
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--bg-hover);
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+}
+.app-nav__link:hover {
+  background: #e5e7eb;
+  text-decoration: none;
+}
+.app-nav__link.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.app-content {
+  min-height: 400px;
+}
+
+@media (max-width: 640px) {
+  .app-container { padding: 12px; }
+  .app-title { font-size: 18px; }
+  .app-header { gap: 8px; }
+  .app-nav__link { padding: 6px 12px; font-size: 13px; }
+}

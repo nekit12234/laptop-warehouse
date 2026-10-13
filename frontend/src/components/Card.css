@@ -1,0 +1,48 @@
+.card {
+  background: var(--bg-card);
+  padding: 18px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--primary);
+  transition: box-shadow 0.15s;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card__title {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.card__value {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.card--danger {
+  border-left-color: var(--danger);
+}
+.card--danger .card__value {
+  color: var(--danger);
+}
+
+.card--success {
+  border-left-color: var(--success);
+}
+.card--success .card__value {
+  color: var(--success);
+}
+
+.card--warning {
+  border-left-color: var(--warning);
+}
+.card--warning .card__value {
+  color: var(--warning);
+}
